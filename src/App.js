@@ -26,6 +26,14 @@ function App() {
     return () => cancel()
   }, [currentPageUrl])
 
+  function goToNextPage() {
+    setCurrentPageUrl(nextPageUrl)
+  }
+
+  function goToPrevPage() {
+    setCurrentPageUrl(prevPageUrl)
+  }
+
   if (loading) return 'Loading...'
 
   return (
