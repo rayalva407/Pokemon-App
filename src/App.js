@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function App() {
+
+  const [pokemon, setPokemon] useState(["bulbasaur", "charmander"])
+
   return (
     null
   );
